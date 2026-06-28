@@ -1,0 +1,47 @@
+name: Build iOS IPA
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build unsigned IPA
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Install Cocoapods
+        run: |
+          cd iOS_Build
+          pod install
+
+      - name: Build Xcode Project
+        run: |
+          cd iOS_Build
+          xcodebuild archive \
+            -workspace Unity-iPhone.xcworkspace \
+            -scheme Unity-iPhone \
+            -configuration Release \
+            -archivePath $(pwd)/build/Unity-iPhone.xcarchive \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            COMPILER_INDEX_STORE_ENABLE=NO
+
+      - name: Package IPA
+        run: |
+          cd iOS_Build/build/Unity-iPhone.xcarchive/Products/Applications
+          mkdir Payload
+          mv *.app Payload/
+          zip -r ../../../../../App_AR_Cua_Hanh.ipa Payload
+          
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: App_AR_Cua_Hanh.ipa
+          path: App_AR_Cua_Hanh.ipa
