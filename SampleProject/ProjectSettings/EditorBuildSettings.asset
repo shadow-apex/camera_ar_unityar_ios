@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/2-TapToPlace.unity
+    guid: 68cfdd86d1913475c8ebe45a0e04188c
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 07299d016f2c6430d82b6e4b018a2b6d, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 30e6f0cba46164e3893a43228a1b8ed5, type: 2}

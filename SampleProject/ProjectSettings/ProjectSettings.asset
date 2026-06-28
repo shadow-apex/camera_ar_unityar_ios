@@ -51,7 +51,7 @@ PlayerSettings:
   m_MTRendering: 1
   mipStripping: 0
   numberOfMipsStripped: 0
-  m_StackTraceTypes: 010000000100000001000000010000000100000001000000
+  m_StackTraceTypes: 020000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosUseCustomAppBackgroundBehavior: 0
@@ -158,8 +158,8 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Yoshinaga.VPS_App
-    Standalone: com.DefaultCompany.GeoAPITest
-    iPhone: com.DefaultCompany.GeoAPITest
+    Standalone: com.Yoshinaga.VPS-App
+    iPhone: com.Yoshinaga.VPS-App
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -552,9 +552,9 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: For AR Experience
+  cameraUsageDescription: Can dung Camera de quet AR
   locationUsageDescription: For AR Experience
-  microphoneUsageDescription: For AR Experience
+  microphoneUsageDescription: Can dung GPS de quet vi tri
   bluetoothUsageDescription: 
   switchNMETAOverride: 
   switchNetLibKey: 
@@ -797,7 +797,7 @@ PlayerSettings:
   webGLPowerPreference: 2
   scriptingDefineSymbols:
     4: UNITY_XR_ARKIT_LOADER_ENABLED;ARCORE_EXTENSIONS_IOS_SUPPORT;GEOSPATIAL_IOS_SUPPORT
-    iPhone: ARCORE_EXTENSIONS_IOS_SUPPORT;GEOSPATIAL_IOS_SUPPORT
+    iPhone: ARCORE_EXTENSIONS_IOS_SUPPORT;GEOSPATIAL_IOS_SUPPORT;UNITY_XR_ARKIT_LOADER_ENABLED
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -810,7 +810,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 2
+  selectedPlatform: 3
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 1

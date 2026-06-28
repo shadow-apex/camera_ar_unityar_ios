@@ -53,3 +53,19 @@ A part of tutorial was translated into English. It'll be great if it's helpful f
 https://www.docswell.com/s/Tks_Yoshinaga/5664V5-geospatial-api-en
 
 <br><br>
+
+
+
+
+
+
+
+supabase.com
+-camera_ar 
+ https://klsypvxwlbjcssfxpqjg.supabase.co
+ sb_publishable_d-mt2RllA0KwRlA274UJ2A_UGHaok2l
+ - camera_ar_unity 
+https://afgbfgdmlubdwcfonepd.supabase.co    (vanhanhdo8)
+sb_publishable_vfKIB1HwbQa2omGc_jsJ8A_Ub3A68cz
+ google ar
+ AIzaSyCrgq09HbKaJnm1jY120TsBtj2AlhH3UX4
